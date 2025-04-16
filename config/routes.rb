@@ -7,4 +7,6 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+  resource :string_calculators, only: [:new, :create]
+  root 'string_calculators#new'
 end
