@@ -1,5 +1,9 @@
-class StringCalculator
-  def self.add(numbers)
-    0 # We return 0 for an empty string, which will pass the first test.
+module StringCalculator
+  def self.add(input)
+    return 0 if input.empty?
   end
 end
+
+
+
+
