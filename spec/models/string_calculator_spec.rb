@@ -21,6 +21,12 @@ RSpec.describe StringCalculator, type: :model do
       result = StringCalculator.add("1\n2,3")
       expect(result).to eq(6)
     end
+	
+	it 'handles custom delimiter' do
+      result = StringCalculator.add("//;\n1;2;3")
+      expect(result).to eq(6)
+    end
+
 
   end
 end
