@@ -1,11 +1,7 @@
 class StringCalculator
   def self.add(numbers)
-    return numbers.to_i if numbers =~ /^\d+$/
-    0
+    return 0 if numbers.empty?
+
+    numbers.split(',').map(&:to_i).sum
   end
 end
-
-
-
-
-
