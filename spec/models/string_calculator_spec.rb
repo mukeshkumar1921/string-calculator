@@ -17,6 +17,10 @@ RSpec.describe StringCalculator, type: :model do
       expect(result).to eq(3)
     end
 
+    it 'handles new lines as delimiters' do
+      result = StringCalculator.add("1\n2,3")
+      expect(result).to eq(6)
+    end
 
   end
 end
