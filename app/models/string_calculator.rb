@@ -1,8 +1,10 @@
-module StringCalculator
-  def self.add(input)
-    return 0 if input.empty?
+class StringCalculator
+  def self.add(numbers)
+    return numbers.to_i if numbers =~ /^\d+$/
+    0
   end
 end
+
 
 
 
